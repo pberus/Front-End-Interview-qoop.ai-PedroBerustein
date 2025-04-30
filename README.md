@@ -5,7 +5,8 @@ Welcome! This project is a modern and interactive landing page developed as part
 
 🚀 Live Demo
 👉 [View Live on Vercel](https://front-end-interview-qoop-ai-pedro-berustein-1.vercel.app/)
-👉 [View UX/UI Design] (https://www.figma.com/design/60BNBTT2V4PukgBEHCQbY5/FilmFlow---Frontend-Interview?node-id=3-24&t=lKcQcSYuUC0aiKtq-1)
+
+👉 [View UX/UI Design](https://www.figma.com/design/60BNBTT2V4PukgBEHCQbY5/FilmFlow---Frontend-Interview?node-id=3-24&t=lKcQcSYuUC0aiKtq-1)
 
 # 🛠️ Tech Stack
 
