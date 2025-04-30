@@ -1,11 +1,11 @@
 import './App.css'
-import Home from './views/Home/Home'
+import ScrollLinked from './components/common/Scroll-linked'
 
 function App() {
 
   return (
     <>
-      <Home />
+      <ScrollLinked />
     </>
   )
 }

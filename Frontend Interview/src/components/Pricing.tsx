@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { TiTick } from "react-icons/ti";
+import * as motion from "motion/react-client"
 
 interface CardProps {
   title: string;
@@ -11,22 +12,40 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({ title, price, description, content, recommended }) => {
   return (
-    <div className={`bg-white rounded-lg border-1 border-[#4841b5] p-4 flex flex-col gap-2 justify-between text-[#6c63ff] h-[400px] ${recommended ? "border-3 border-[#2922a1] relative" : ""}`}>
-      {recommended && <span className="text-sm text-white absolute top-0 right-0 border-l-2 border-b-2 p-1 rounded-bl-md bg-[#4841b5] font-bold">Recommended</span>}
+    <motion.div
+      whileHover={{ scale: 1.01 }}
+      whileTap={{ scale: 1 }}
+      className={`bg-white rounded-lg border-1 border-[#4841b5] p-4 flex flex-col gap-2 justify-between text-[#6c63ff] h-[400px] transition-all ${recommended ? "border-3 border-[#2922a1] relative" : ""
+        }`}
+    >
+      {recommended && (
+        <span className="text-sm text-white absolute top-0 right-0 border-l-2 border-b-2 p-1 rounded-bl-md bg-[#4841b5] font-bold">
+          Recommended
+        </span>
+      )}
       <div>
         <h3 className="text-2xl font-bold">{title}</h3>
-        <p className="text-4xl font-bold">${price}<span className="text-lg font-normal">/month</span></p>
+        <p className="text-4xl font-bold">
+          ${price}
+          <span className="text-lg font-normal">/month</span>
+        </p>
         <p className="text-gray-500">{description}</p>
         <ul className="list-none pl-2 pt-3">
           {content.map((item, index) => (
-            <li key={index} className="flex items-center text-black text-lg"><TiTick color="#6c63ff" />{item}</li>
+            <li key={index} className="flex items-center text-black text-lg">
+              <TiTick color="#6c63ff" />
+              {item}
+            </li>
           ))}
         </ul>
       </div>
-      <button className="border rounded bg-[#6c63ff] text-white p-1">Suscribe</button>
-    </div>
+      <button className="border rounded bg-[#6c63ff] text-white p-1">
+        Suscribe
+      </button>
+    </motion.div>
   );
 };
+
 
 const Pricing: FC = () => {
   const pricingPlans = [
