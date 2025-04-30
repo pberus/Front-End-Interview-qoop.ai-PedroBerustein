@@ -6,7 +6,7 @@ Welcome! This project is a modern and interactive landing page developed as part
 🚀 Live Demo
 👉 [View Live on Vercel](https://front-end-interview-qoop-ai-pedro-berustein-1.vercel.app/)
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 ⚛️ React with Hooks
 
@@ -22,7 +22,7 @@ Welcome! This project is a modern and interactive landing page developed as part
 
 🧪 Basic form validation
 
-📦 Setup Instructions
+# 📦 Setup Instructions
 
 Clone the repository:
 ```bash
@@ -51,7 +51,7 @@ npm run build
 yarn build
 ```
 
-🧩 Project Structure
+# 🧩 Project Structure
 
 src/components: Reusable UI components (Hero, Features, Testimonials, Pricing, ContactForm, Footer, etc.)
 
@@ -61,7 +61,7 @@ src/assets: Static resources like images and icons.
 
 src/styles: Tailwind config and global styles.
 
-✨ Feature List
+ # ✨ Feature List
 1. Hero Section
 Engaging headline, subheading, and a call-to-action (CTA) button.
 
