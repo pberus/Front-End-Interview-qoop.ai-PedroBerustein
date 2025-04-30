@@ -4,6 +4,7 @@ import Features from "../../components/Features";
 import Testimonials from "../../components/Testimonials";
 import Pricing from "../../components/Pricing";
 import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
 
 const Home: FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: FC = () => {
       <Testimonials />
       <Pricing />
       <Contact />
+      <Footer />
     </div>
   );
 };
