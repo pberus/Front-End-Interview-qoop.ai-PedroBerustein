@@ -4,6 +4,11 @@ import img from "../assets/undraw_home-cinema_jdm1.svg";
 import * as motion from "motion/react-client"
 
 const Hero: FC = () => {
+  const scrollTo = (section: "hero" | "features" | "testimonials" | "pricing" | "contact") => {
+    const event = new CustomEvent("scrollToSection", { detail: section });
+    window.dispatchEvent(event);
+  };
+
   return (
     <div className="flex flex-col lg:flex-row gap-4 m-8 lg:h-[80vh] items-center w-auto items-center">
       <div className="flex flex-col gap-3 lg:gap-5 items-center justify-center text-center w-[100%] lg:w-[50%]">
@@ -19,7 +24,7 @@ const Hero: FC = () => {
           }}
         >
           <button className="p-2 lg:p-3 lg:text-xl border rounded-lg w-75 text-white bg-[#6c63ff] cursor-pointer hover:opacity-80 active:bg-[#4b44c0]">Get started</button>
-          <button className="p-2 lg:p-3 lg:text-xl border rounded-lg w-75 text-[#6c63ff] cursor-pointer hover:opacity-80 active:bg-[#e0e0ff]">View Pricing</button>
+          <button className="p-2 lg:p-3 lg:text-xl border rounded-lg w-75 text-[#6c63ff] cursor-pointer hover:opacity-80 active:bg-[#e0e0ff]" onClick={() => scrollTo("pricing")}>View Pricing</button>
         </motion.div>
       </div>
       <img src={img} alt="home-cinema" className="sm:h-[400px] lg:w-[50%]" />
