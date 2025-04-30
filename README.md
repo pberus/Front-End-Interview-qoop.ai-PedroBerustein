@@ -96,6 +96,9 @@ Social media links (e.g., Facebook, Twitter, LinkedIn).
 
 Company information and copyright.
 
+7.Extra Visual Features
+Newsletter Subscription Form (mocked API call)
+
 Final Thoughts
 
 This project was a great opportunity to showcase my front-end development skills and attention to detail. I aimed to create an engaging, responsive, and user-friendly experience, while keeping the code clean, reusable, and scalable.
