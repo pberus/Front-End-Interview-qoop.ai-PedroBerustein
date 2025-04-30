@@ -7,6 +7,7 @@ import Pricing from "../../components/Pricing";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 import Variants from "../../components/common/Variants";
+import NewsletterSubscriptionForm from "../../components/NewsletterSubscriptionForm";
 
 type Section = "hero" | "features" | "testimonials" | "pricing" | "contact";
 
@@ -41,6 +42,7 @@ const Home: FC = () => {
       <section ref={sectionRefs.features} id="features"><Features /></section>
       <section ref={sectionRefs.testimonials} id="testimonials"><Testimonials /></section>
       <section ref={sectionRefs.pricing} id="pricing"><Pricing /></section>
+      <NewsletterSubscriptionForm />
       <section ref={sectionRefs.contact} id="contact"><Contact /></section>
       <Footer />
     </div>

@@ -202,7 +202,7 @@ const toggleContainer: React.CSSProperties = {
     cursor: "pointer",
     position: "absolute",
     top: 18,
-    left: 15,
+    left: 29,
     width: 50,
     height: 50,
     borderRadius: "50%",
