@@ -13,9 +13,9 @@ interface CardProps {
 const Card: FC<CardProps> = ({ title, price, description, content, recommended }) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.01 }}
+      whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 1 }}
-      className={`bg-white rounded-lg border-1 border-[#4841b5] p-4 flex flex-col gap-2 justify-between text-[#6c63ff] h-[400px] transition-all ${recommended ? "border-3 border-[#2922a1] relative" : ""
+      className={`bg-white rounded-lg border-1 border-[#4841b5] p-4 flex flex-col gap-2 justify-between text-[#6c63ff] h-[420px] lg:h-[450px] transition-all ${recommended ? "border-3 border-[#2922a1] relative" : ""
         }`}
     >
       {recommended && (
@@ -24,22 +24,22 @@ const Card: FC<CardProps> = ({ title, price, description, content, recommended }
         </span>
       )}
       <div>
-        <h3 className="text-2xl font-bold">{title}</h3>
-        <p className="text-4xl font-bold">
+        <h3 className="text-2xl lg:text-3xl font-bold">{title}</h3>
+        <p className="text-4xl lg:text-5xl font-bold">
           ${price}
-          <span className="text-lg font-normal">/month</span>
+          <span className="text-lg lg:text-xl font-normal">/month</span>
         </p>
-        <p className="text-gray-500">{description}</p>
-        <ul className="list-none pl-2 pt-3">
+        <p className="text-gray-500 sm:text-lg">{description}</p>
+        <ul className="list-none pt-3">
           {content.map((item, index) => (
-            <li key={index} className="flex items-center text-black text-lg">
+            <li key={index} className="flex items-baseline text-[#56535c] text-lg sm:text-2xl lg:text-xl">
               <TiTick color="#6c63ff" />
               {item}
             </li>
           ))}
         </ul>
       </div>
-      <button className="border rounded bg-[#6c63ff] text-white p-1">
+      <button className="border rounded bg-[#6c63ff] text-white p-2 lg:p-3 lg:text-xl cursor-pointer hover:opacity-80 active:bg-[#4b44c0]">
         Suscribe
       </button>
     </motion.div>
@@ -75,12 +75,12 @@ const Pricing: FC = () => {
   return (
     <div className="bg-[#6c63ff] flex flex-col gap-8 p-8 text-white justify-center items-center">
       <div className="flex flex-col gap-2 text-center">
-        <h2 className="text-2xl font-bold">Pricing</h2>
-        <p className="text-lg text-gray-100 w-75">
+        <h2 className="text-2xl lg:text-3xl font-bold">Pricing</h2>
+        <p className="text-lg lg:text-2xl text-gray-100 w-75">
           Choose the plan that best suits you and your family
         </p>
       </div>
-      <div className="flex flex-col gap-3 w-full">
+      <div className="flex flex-col lg:flex-row gap-3 w-[90%]">
         {pricingPlans.map((plan, index) => (
           <Card
             key={index}

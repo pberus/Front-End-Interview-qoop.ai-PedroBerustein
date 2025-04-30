@@ -20,7 +20,7 @@ export default function Variants() {
                     style={nav}
                 >
                     <motion.div style={background} variants={sidebarVariants} />
-                    <Navigation />
+                    <Navigation isOpen={isOpen} />
                     <MenuToggle toggle={() => setIsOpen(!isOpen)} />
                 </motion.nav>
             </div>
@@ -37,13 +37,21 @@ const navVariants = {
     },
 }
 
-const Navigation = () => (
-    <motion.ul style={list} variants={navVariants}>
+const Navigation = ({ isOpen }: { isOpen: boolean }) => (
+    <motion.ul
+        style={{
+            ...list,
+            pointerEvents: isOpen ? "auto" : "none",
+            opacity: isOpen ? 1 : 0.5,
+        }}
+        variants={navVariants}
+    >
         {[{ number: 0, title: "Hero" }, { number: 1, title: "Features" }, { number: 2, title: "Testimonials" }, { number: 3, title: "Pricing" }, { number: 4, title: "Contact" }].map((ele, index) => (
             <MenuItem i={ele.number} title={ele.title} key={index} />
         ))}
     </motion.ul>
 )
+
 
 const itemVariants = {
     open: {

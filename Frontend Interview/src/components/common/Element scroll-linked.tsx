@@ -12,7 +12,7 @@ import { useRef } from "react"
 
 interface Props {
     elements: React.ReactNode[];
-  }
+}
 
 export default function ElementScrollLinked({ elements }: Props) {
     const ref = useRef(null)
@@ -21,12 +21,12 @@ export default function ElementScrollLinked({ elements }: Props) {
 
     return (
         <div id="example">
-            <svg id="progress" width="80" height="80" viewBox="0 0 100 100">                
+            <svg id="progress" width="80" height="80" viewBox="0 0 100 100">
             </svg>
             <motion.ul ref={ref} style={{ maskImage }}>
                 {elements.map((element, index) => (
                     <li key={index}>{element}</li>
-                ))}                
+                ))}
             </motion.ul>
             <StyleSheet />
         </div>
@@ -78,8 +78,9 @@ function StyleSheet() {
         <style>{`
             #example {
               width: 90vw;
-              max-width: 400px;
-              position: relative;              
+              max-width: 700px;
+              position: relative;
+              height: 100%;              
             }
 
             #example #progress {
@@ -106,9 +107,8 @@ function StyleSheet() {
             #example ul {
                 display: flex;
                 list-style: none;
-                height: 220px;
+                height: 100%;
                 overflow-x: auto;
-                padding: 20px 0;
                 margin: 0 auto;
                 gap: 20px;
                 min-width: 100%;
