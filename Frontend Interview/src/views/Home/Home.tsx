@@ -1,3 +1,4 @@
+//This view is the main page of the application. It imports various components and uses them to create a complete page layout. The page includes sections for a hero banner, features, testimonials, pricing, contact information, and a footer. The component also handles smooth scrolling to different sections when a custom event is triggered.
 import { FC, useEffect, useRef, RefObject } from "react";
 import Hero from "../../components/Hero";
 import Features from "../../components/Features";

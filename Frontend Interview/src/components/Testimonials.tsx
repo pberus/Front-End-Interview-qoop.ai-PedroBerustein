@@ -1,3 +1,4 @@
+//This component displays a list of testimonials from users. It fetches the testimonials using a custom hook and displays them in a card format. If the testimonials are still loading, it shows a loading animation instead. Also, it uses a custom scrollbar style for better aesthetics. The component is styled using Tailwind CSS classes for responsiveness and aesthetics.
 import { FC } from "react";
 import { FaStar } from "react-icons/fa";
 import useTestimonials from "../hooks/useTestimonials";

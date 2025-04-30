@@ -1,3 +1,5 @@
+//This component is responsible for displaying the features of the application.
+// It uses the `motion` library to animate the appearance of the feature cards. Each card contains an icon, title, and description of a specific feature. The component is styled using Tailwind CSS classes for a modern and responsive design.
 import { FC, ReactElement } from "react";
 import { FaMagic, FaDownload, FaUserFriends, FaBroadcastTower } from "react-icons/fa";
 import * as motion from "motion/react-client"

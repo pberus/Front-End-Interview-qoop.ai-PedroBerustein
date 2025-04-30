@@ -1,3 +1,4 @@
+//This component is a Hero section for a web application that promotes home cinema streaming services. It includes a title, subtitle, a background illustration and two buttons for getting started and viewing pricing. The component uses the `motion` library to animate the appearance of the buttons and the image of a home cinema setup.
 import { FC } from "react";
 import img from "../assets/undraw_home-cinema_jdm1.svg";
 import * as motion from "motion/react-client"

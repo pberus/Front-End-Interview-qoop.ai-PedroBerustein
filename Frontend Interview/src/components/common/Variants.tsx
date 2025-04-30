@@ -1,3 +1,4 @@
+//This component is a Framer Motion component that creates a sidebar navigation menu with animated transitions. It uses the `motion` library to animate the opening and closing of the sidebar, as well as the individual menu items.
 "use client"
 
 import type { Variants } from "motion/react"

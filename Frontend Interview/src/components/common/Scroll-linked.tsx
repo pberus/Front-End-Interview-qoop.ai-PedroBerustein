@@ -1,3 +1,4 @@
+//This component is a Framer Motion component that creates a scroll-linked animation effect in the top bar of the page. This shows a progress bar that fills up as the user scrolls down the page.
 "use client"
 
 import { motion, useScroll } from "motion/react"

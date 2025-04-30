@@ -1,3 +1,4 @@
+//This component is a Framer Motion loading animation that shows three dots jumping in a sequence.
 "use client"
 
 import { motion, Variants } from "motion/react"

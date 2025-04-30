@@ -1,3 +1,4 @@
+//This component is a Framer Motion component that creates a scroll-linked animation effect for a list of elements. It uses the `useScroll` hook to track the scroll progress and applies a mask image to create a gradient effect that reveals the elements as the user scrolls. The component also includes a custom scrollbar style for better aesthetics.
 "use client"
 
 import {

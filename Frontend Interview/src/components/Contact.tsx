@@ -1,3 +1,4 @@
+//This component is a contact form that allows users to send messages. It includes fields for name, email, and message, and a submit button. The form is styled with Tailwind CSS classes for responsiveness and aesthetics.
 import { FC } from "react";
 
 const Contact: FC = () => {

@@ -1,3 +1,4 @@
+//This component is a footer for a web application. It includes links to different sections of the site, social media icons, and a copyright notice. The component is styled using Tailwind CSS classes for responsiveness and aesthetics.
 import { FC } from "react";
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok, FaTwitter } from "react-icons/fa";
 

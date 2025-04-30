@@ -1,3 +1,4 @@
+//This component is a pricing card component that displays different subscription plans. It uses the `motion` library for animations and includes a recommended plan highlight. The component is styled with Tailwind CSS classes and includes a button for subscribing to the selected plan.
 import { FC } from "react";
 import { TiTick } from "react-icons/ti";
 import * as motion from "motion/react-client"

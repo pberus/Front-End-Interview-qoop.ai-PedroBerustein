@@ -1,3 +1,5 @@
+//This hook fetches testimonials from a public API and returns them in a simplified format.
+// It also handles loading state and error handling. The hook takes a count parameter to limit the number of testimonials fetched.
 import { useState, useEffect } from "react";
 
 interface Testimonial {
