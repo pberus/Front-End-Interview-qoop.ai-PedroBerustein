@@ -228,14 +228,6 @@ const listItem: React.CSSProperties = {
     cursor: "pointer",
 }
 
-const iconPlaceholder: React.CSSProperties = {
-    width: 40,
-    height: 40,
-    borderRadius: "50%",
-    flex: "40px 0",
-    marginRight: 20,
-}
-
 const textPlaceholder: React.CSSProperties = {
     borderRadius: 5,
     width: 200,
